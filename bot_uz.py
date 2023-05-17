@@ -1,5 +1,3 @@
-# 11.05.2023  started
-
 import logging
 
 from aiogram import Bot, Dispatcher, executor, types
@@ -28,7 +26,7 @@ async def my_func(call: types.CallbackQuery):
     
  Ushbu loyiha orqali xalqaro doirada boshqaruv qobiliyatiga ega kadrlar tizimi shakllantiriladi.""", reply_markup=main_menu)
 
-# loyiha_haqida
+# about_the_project
 @dp.callback_query_handler(text='loyiha_haqida')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("Loyiha haqida!", reply_markup=loyiha_haqida)
@@ -43,7 +41,7 @@ async def my_func(call: types.CallbackQuery):
     
 Ushbu loyiha orqali xalqaro doirada boshqaruv qobiliyatiga ega kadrlar tizimi shakllantiriladi.""", reply_markup=main_menu)    
 
-
+# aim_project
 @dp.callback_query_handler(text='loyiha_maqsadi')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("""🔰 Yosh Menejerlar dasturi nima maqsadda tashkil etilmoqda?
@@ -56,6 +54,7 @@ yo'lga qo'yish maqsadida tashkil etilgan.""", reply_markup=orqaga_1)
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("Loyiha haqida!", reply_markup=loyiha_haqida)
 
+# project_task
 @dp.callback_query_handler(text='loyiha_vazifasi')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("""🔰 Loyihaning vazifalari nimalardan iborat?
@@ -71,6 +70,7 @@ ma'noda chek qo'yish, ularning o'zaro hamkorligini ta'minlashga ko'maklashish.""
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("Loyiha haqida!", reply_markup=loyiha_haqida)
 
+# order_process
 @dp.callback_query_handler(text='otkazilish_tartibi')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("""🔰 Loyiha qancha vaqt davom etadi va o'tkazilish tartibi qanday?
@@ -92,6 +92,7 @@ o'z ambitsiyalariga ega va kelajakda katta maqsadlari bor yoshlar tanlab olinadi
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("Loyiha haqida!", reply_markup=loyiha_haqida)
 
+# requirements
 @dp.callback_query_handler(text='talablar')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("""🔰 Loyihada qatnashish uchun nomzodlarga qanday talablar qo'yiladi?
@@ -105,7 +106,7 @@ async def my_func(call: types.CallbackQuery):
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("Loyiha haqida!", reply_markup=loyiha_haqida)
 
-# royxatdan_otish
+# registration
 @dp.callback_query_handler(text='royxatdan_otish')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("""Siz ro'yxatga olindingiz!""", reply_markup=orqaga_6)
@@ -121,7 +122,7 @@ Yosh menejerlar dasturi Besh tashabbus loyihasi hamda MBM IT kompaniyasi vakilla
 Ushbu loyiha orqali xalqaro doirada boshqaruv qobiliyatiga ega kadrlar tizimi shakllantiriladi.""", reply_markup=main_menu)
 
 
-# savollar_yollash
+# send_questions
 @dp.callback_query_handler(text='savollar_yollash')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("""Assalomu alaykum!
@@ -141,6 +142,7 @@ Yosh menejerlar dasturi Besh tashabbus loyihasi hamda MBM IT kompaniyasi vakilla
 Ushbu loyiha orqali xalqaro doirada boshqaruv qobiliyatiga ega kadrlar tizimi shakllantiriladi.""", reply_markup=main_menu)
 
 
+# english
 @dp.callback_query_handler(text='english')
 async def my_func(call: types.CallbackQuery):
     await call.message.answer("""👋Assalomu alaykum!
@@ -268,4 +270,3 @@ Through this program personnel management skills system will be formed in the in
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
-

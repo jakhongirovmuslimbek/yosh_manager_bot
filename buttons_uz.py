@@ -1,7 +1,7 @@
 
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup
 
-# tilni tanlash
+# choosing language
 language = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -11,7 +11,7 @@ language = InlineKeyboardMarkup(
     ]
 )
 
-# bosh menu
+# main menu
 main_menu = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -24,7 +24,7 @@ main_menu = InlineKeyboardMarkup(
     ]
 )
 
-# loyiha haqida
+# about_the_project
 loyiha_haqida = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -40,7 +40,7 @@ loyiha_haqida = InlineKeyboardMarkup(
         ]
     ]
 )
-# loyiha_maqsadi back
+# aim_project back
 orqaga_1 = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -48,7 +48,7 @@ orqaga_1 = InlineKeyboardMarkup(
         ]
     ]
 )
-# loyiha_vazifasi back
+# project_task back
 orqaga_2 = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -57,7 +57,7 @@ orqaga_2 = InlineKeyboardMarkup(
     ]
 )
 
-# otkazilish_tartibi back
+# order_process back
 orqaga_3 = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -65,7 +65,7 @@ orqaga_3 = InlineKeyboardMarkup(
         ]
     ]
 )
-# talablar back
+# requirements back
 orqaga_4 = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -75,7 +75,7 @@ orqaga_4 = InlineKeyboardMarkup(
 )
 
 
-# savollar_yollash back
+# registration back
 orqaga_5 = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -84,7 +84,7 @@ orqaga_5 = InlineKeyboardMarkup(
     ]
 )
 
-# royxatdan_otish back
+# send_questions back
 orqaga_6 = InlineKeyboardMarkup(
     inline_keyboard=[
         [
